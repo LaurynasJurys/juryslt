@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if command -v curl >/dev/null 2>&1; then
+  curl -fsS http://127.0.0.1:8080/ >/dev/null
+else
+  python3 - <<'PY'
+import urllib.request
+urllib.request.urlopen('http://127.0.0.1:8080/', timeout=2)
+PY
+fi
