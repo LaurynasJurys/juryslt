@@ -35,7 +35,7 @@ On pushes to `main`, it builds the Ubuntu-based container image and publishes:
 - `ghcr.io/laurynasjurys/juryslt:staging`
 - `ghcr.io/laurynasjurys/juryslt:sha-<commit>`
 
-After the image is pushed, the workflow updates `k8s/deployment.yaml` to the immutable SHA tag and commits that change back to `main`, so ArgoCD syncs an exact image version from Git.
+The workflow publishes the staging image to GHCR. The Kubernetes manifest stays pinned to the stable `staging` tag for a simpler deployment path.
 
 ## Manual image push
 
@@ -60,11 +60,12 @@ kubectl apply -f k8s/application.yaml
 
 ArgoCD will then sync the `k8s/` directory to the cluster.
 
-Because auto-sync is enabled, staging becomes fully GitOps-driven once:
-- GitHub Actions publishes the image to GHCR
-- GitHub Actions updates `k8s/deployment.yaml` to `ghcr.io/laurynasjurys/juryslt:sha-<commit>`
-- ArgoCD detects the Git change and syncs it to the cluster
+Because auto-sync is enabled, staging will deploy once:
+- GitHub Actions publishes `ghcr.io/laurynasjurys/juryslt:staging`
+- ArgoCD is watching this repository and the `juryslt-stage` Application exists in the cluster
 - your cluster can pull from GHCR
+
+Note: if the Deployment remains on the mutable `staging` tag, Kubernetes may not automatically restart pods on every image refresh by itself. For a fully automatic image rollout, use ArgoCD Image Updater or a manifest-update workflow later.
 
 ## Direct kubectl deployment
 
