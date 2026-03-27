@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: juryslt-stage
-  labels:
-    app.kubernetes.io/name: jurys-cloud-consulting
-    app.kubernetes.io/part-of: juryslt
