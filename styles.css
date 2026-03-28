@@ -48,15 +48,19 @@ a {
 }
 
 .topbar {
+  position: sticky;
+  top: 0.75rem;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1.25rem;
   padding: 1rem 1.25rem;
   margin-top: 0.5rem;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: rgba(7, 17, 31, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 22px;
+  background: rgba(7, 17, 31, 0.72);
+  box-shadow: 0 18px 48px rgba(2, 6, 23, 0.24);
 }
 
 .brand {
@@ -67,14 +71,15 @@ a {
 }
 
 .brand-mark {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.6rem;
+  height: 2.6rem;
   display: inline-grid;
   place-items: center;
   border-radius: 14px;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #04111a;
   font-weight: 800;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2);
 }
 
 .brand-name,
@@ -97,26 +102,29 @@ a {
 }
 
 .nav-link {
-  padding: 0.7rem 0.95rem;
+  padding: 0.72rem 0.98rem;
   border-radius: 999px;
   text-decoration: none;
   color: var(--muted);
-  transition: opacity 180ms ease, background 180ms ease, color 180ms ease;
+  transition: opacity 180ms ease, background 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
 .nav-link:hover {
-  opacity: 0.95;
+  opacity: 0.98;
   color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .nav-link-active {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text);
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.08);
 }
 
 .nav-cta {
   border: 1px solid var(--line);
   color: var(--text);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .hero {
@@ -151,6 +159,12 @@ a {
   box-shadow: var(--shadow);
 }
 
+.hero-copy-home {
+  background:
+    radial-gradient(circle at top left, rgba(110, 231, 249, 0.1), transparent 35%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(10, 17, 31, 0.82));
+}
+
 .eyebrow {
   margin: 0 0 0.9rem;
   color: var(--primary);
@@ -169,9 +183,10 @@ ul {
 }
 
 h1 {
-  font-size: clamp(2.4rem, 6vw, 4.8rem);
-  line-height: 0.98;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 0.97;
   margin-bottom: 1rem;
+  max-width: 12ch;
 }
 
 h2 {
@@ -200,6 +215,11 @@ h3 {
   line-height: 1.7;
 }
 
+.hero-lead {
+  max-width: 56ch;
+  font-size: 1.08rem;
+}
+
 .page-lead {
   max-width: 860px;
 }
@@ -209,6 +229,22 @@ h3 {
   gap: 0.85rem;
   flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+.hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.35rem;
+}
+
+.hero-proof span {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .button {
@@ -225,6 +261,7 @@ h3 {
 .button:hover,
 .text-link:hover {
   opacity: 0.92;
+  transform: translateY(-1px);
 }
 
 .button:focus-visible,
@@ -250,6 +287,10 @@ h3 {
   padding: 1.5rem;
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.96), rgba(10, 17, 31, 0.88));
+}
+
+.status-card-strong {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .status-pill,
@@ -292,6 +333,10 @@ h3 {
   padding: 1.35rem;
 }
 
+.metrics article {
+  background: rgba(10, 17, 31, 0.74);
+}
+
 .metrics strong,
 .service-card h3,
 .approach-list h3,
@@ -328,6 +373,14 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.feature-grid-home {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pillar-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .service-grid-single {
   grid-template-columns: 1fr;
 }
@@ -339,6 +392,10 @@ h3 {
 .contact-card {
   background: var(--panel);
   border: 1px solid var(--line);
+}
+
+.feature-card-strong {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(10, 17, 31, 0.82));
 }
 
 .service-card-large {
@@ -372,6 +429,10 @@ h3 {
 
 .split-panel-strong {
   align-items: start;
+}
+
+.home-split {
+  background: linear-gradient(180deg, rgba(12, 18, 34, 0.92), rgba(8, 13, 25, 0.86));
 }
 
 .approach-list {
@@ -428,17 +489,24 @@ h3 {
   .metrics,
   .feature-grid,
   .blog-grid,
-  .split-panel {
+  .split-panel,
+  .pillar-grid,
+  .feature-grid-home {
     grid-template-columns: 1fr;
   }
 
   .topbar {
     align-items: flex-start;
     flex-direction: column;
+    position: static;
   }
 
   .nav {
     justify-content: flex-start;
+  }
+
+  h1 {
+    max-width: none;
   }
 }
 
@@ -479,7 +547,7 @@ h3 {
   }
 
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.35rem;
   }
 
   .nav {
