@@ -67,15 +67,18 @@ jobs:
           IMAGE_REF: ${{ needs.build-and-publish.outputs.image_ref }}
         run: |
           python3 - <<'PY'
+          import os
+          import re
           from pathlib import Path
+
+          image_ref = os.environ['IMAGE_REF']
           path = Path('k3s/apps/juryslt/manifests/deployment.yaml')
           text = path.read_text()
-          import re
-          new = re.sub(r'image:\s*ghcr\.io/laurynasjurys/juryslt(?:@sha256:[a-f0-9]+|:staging)', f'image: {IMAGE_REF}', text)
+          new = re.sub(r'image:\s*ghcr\.io/laurynasjurys/juryslt(?:@sha256:[a-f0-9]+|:staging)', f'image: {image_ref}', text)
           if new == text:
               raise SystemExit('No image reference updated in deployment.yaml')
           path.write_text(new)
-          print(f'Updated deployment to {IMAGE_REF}')
+          print(f'Updated deployment to {image_ref}')
           PY
 
       - name: Commit and push manifest update
