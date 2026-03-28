@@ -3,91 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jurys.lt staging</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        --bg: #0b1020;
-        --panel: #121933;
-        --text: #f5f7ff;
-        --muted: #b9c2e0;
-        --accent: #79a8ff;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        font-family: Inter, system-ui, sans-serif;
-        background: radial-gradient(circle at top, #172149 0%, var(--bg) 60%);
-        color: var(--text);
-      }
-      main {
-        width: min(720px, calc(100% - 32px));
-        background: rgba(18, 25, 51, 0.92);
-        border: 1px solid rgba(121, 168, 255, 0.18);
-        border-radius: 24px;
-        padding: 40px 32px;
-        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
-      }
-      .pill {
-        display: inline-block;
-        padding: 6px 12px;
-        border-radius: 999px;
-        background: rgba(121, 168, 255, 0.14);
-        color: var(--accent);
-        font-size: 14px;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-      }
-      h1 {
-        margin: 18px 0 12px;
-        font-size: clamp(2rem, 5vw, 3.4rem);
-        line-height: 1.05;
-      }
-      p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 1.05rem;
-        line-height: 1.7;
-      }
-      .grid {
-        margin-top: 28px;
-        display: grid;
-        gap: 14px;
-      }
-      .card {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        border-radius: 18px;
-        padding: 18px;
-      }
-      .card strong {
-        display: block;
-        margin-bottom: 6px;
-        color: var(--text);
-      }
-    </style>
+    <title>Jurys Cloud Consulting | Staging</title>
+    <meta
+      name="description"
+      content="Jurys Cloud Consulting helps startups and SMBs build Azure foundations that are secure, resilient, and ready for AI workloads."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <span class="pill">staging.jurys.lt</span>
-      <h1>Welcome to Jurys.lt staging</h1>
-      <p>
-        This is the temporary welcome page for Jurys Cloud Consulting. The deployment path,
-        ingress, and TLS setup are being wired in through the k3s GitOps repository.
-      </p>
-      <div class="grid">
-        <div class="card">
-          <strong>Status</strong>
-          Basic landing page container is ready for deployment.
+    <div class="site-shell">
+      <header class="topbar reveal">
+        <div class="brand">
+          <span class="brand-mark">JC</span>
+          <div>
+            <strong class="brand-name">Jurys Cloud Consulting</strong>
+            <div class="brand-subtitle">Azure consulting for startups and SMBs</div>
+          </div>
         </div>
-        <div class="card">
-          <strong>Purpose</strong>
-          Short-term test page so staging.jurys.lt serves something clean today.
+        <a class="top-link" href="mailto:laurynas@jurys.lt">laurynas@jurys.lt</a>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Staging preview</p>
+            <h1>Azure foundations that are secure, resilient, and ready for AI workloads.</h1>
+            <p class="lead">
+              Jurys Cloud Consulting helps startups and SMBs design Azure environments that are
+              governed from the start, resilient under pressure, and prepared for modern
+              Artificial Intelligence workloads.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:laurynas@jurys.lt">Discuss your Azure platform</a>
+              <a class="button button-secondary" href="#services">View services</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="status-card">
+              <span class="status-pill">staging.jurys.lt</span>
+              <h2>What this site is about</h2>
+              <p>
+                Azure, resilience, and infrastructure consulting for startups and SMBs that need a
+                stronger platform foundation.
+              </p>
+              <ul>
+                <li>Landing zones and governance-first Azure setups</li>
+                <li>Disaster recovery and resilience planning</li>
+                <li>Artificial Intelligence-ready infrastructure for future workloads</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="metrics">
+          <article>
+            <strong>Built for</strong>
+            <span>Startups and SMBs that need Azure done properly without enterprise bloat.</span>
+          </article>
+          <article>
+            <strong>Approach</strong>
+            <span>Sharp, practical consulting focused on foundations first and complexity second.</span>
+          </article>
+          <article>
+            <strong>Next step</strong>
+            <span>Start with a conversation, identify risks, and shape the right first engagement.</span>
+          </article>
+        </section>
+
+        <section class="services reveal" id="services">
+          <div class="section-heading">
+            <p class="eyebrow">Services</p>
+            <h2>Three service pillars under one clear Azure story</h2>
+            <p class="lead">
+              The offer is intentionally focused: establish the platform, improve resilience, and
+              prepare the environment for AI workloads when the business is ready.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <h3>1. Azure landing zones</h3>
+              <p>
+                Design and structure Azure environments with the right subscriptions, governance,
+                identity boundaries, networking foundations, and operational guardrails.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>2. Disaster recovery</h3>
+              <p>
+                Improve resilience with recovery planning, backup strategy, failure scenario
+                thinking, and practical disaster recovery readiness for critical workloads.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>3. AI infrastructure</h3>
+              <p>
+                Prepare Azure environments for Artificial Intelligence-related workloads with the
+                right platform, security, connectivity, and operational baseline before
+                experimentation scales.
+              </p>
+            </article>
+            <article class="service-card emphasis-card">
+              <h3>Focused, not fragmented</h3>
+              <p>
+                This is not three unrelated businesses. It is one consulting offer centered on Azure
+                foundations that are secure, resilient, and ready for what comes next.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="approach reveal">
+          <div>
+            <p class="eyebrow">Why this approach</p>
+            <h2>Cloud foundations first. Better decisions after that.</h2>
+            <p class="lead">
+              Many teams move into Azure quickly, then discover governance gaps, resilience risks,
+              and unclear paths for future platform growth. Jurys Cloud Consulting helps create the
+              base layer properly so later delivery becomes easier.
+            </p>
+          </div>
+
+          <div class="approach-list">
+            <div>
+              <span>01</span>
+              <h3>Reduce avoidable platform risk</h3>
+              <p>
+                Fix foundational issues early instead of paying for them later through rework,
+                outages, or inconsistent environments.
+              </p>
+            </div>
+            <div>
+              <span>02</span>
+              <h3>Stay practical</h3>
+              <p>
+                The goal is not maximum ceremony. It is an Azure platform that fits the size and
+                maturity of the business.
+              </p>
+            </div>
+            <div>
+              <span>03</span>
+              <h3>Prepare for future capability</h3>
+              <p>
+                A strong Azure foundation makes security, resilience, and Artificial Intelligence
+                adoption materially easier when the business is ready.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer reveal">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Need a stronger Azure foundation?</h2>
+          <p>
+            If you are building on Azure and want a clearer, more resilient platform foundation,
+            get in touch.
+          </p>
         </div>
-      </div>
-    </main>
+        <div class="footer-actions">
+          <a class="button button-primary" href="mailto:laurynas@jurys.lt">Discuss your Azure platform</a>
+          <p>Jurys Cloud Consulting · Staging preview for jurys.lt</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

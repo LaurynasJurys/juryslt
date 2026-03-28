@@ -78,6 +78,12 @@ body {
   font-weight: 600;
 }
 
+.brand-subtitle {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .top-link {
   color: var(--text);
   text-decoration: none;
@@ -225,7 +231,8 @@ h2 {
 }
 
 .metrics strong,
-.service-card h3 {
+.service-card h3,
+.approach-list h3 {
   display: block;
   margin-bottom: 0.75rem;
   font-size: 1.05rem;
@@ -287,6 +294,13 @@ h2 {
   align-items: center;
 }
 
+.footer-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.85rem;
+}
+
 .footer p:last-child {
   text-align: right;
 }
@@ -306,9 +320,13 @@ h2 {
   .hero,
   .approach,
   .metrics,
-  .service-grid,
-  .footer {
+  .service-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .hero-copy,
@@ -317,6 +335,10 @@ h2 {
   .approach,
   .footer {
     padding: 1.5rem;
+  }
+
+  .footer-actions {
+    align-items: flex-start;
   }
 
   .footer p:last-child {
