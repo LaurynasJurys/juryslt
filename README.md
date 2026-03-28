@@ -1,10 +1,12 @@
 # juryslt
 
-Static business landing page for `staging.jurys.lt`.
+Static business website for `staging.jurys.lt`.
 
 This repository contains:
-- a production-style staging landing page for Jurys Cloud Consulting
+- a small multi-page staging site for Jurys Cloud Consulting
 - static assets (HTML, CSS, JS)
+- a blog landing page placeholder
+- a dedicated contact page
 - Docker image build
 - GitHub Actions workflow to publish the image to GHCR
 
