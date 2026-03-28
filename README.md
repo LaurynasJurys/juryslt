@@ -7,6 +7,7 @@ This repository contains:
 - static assets (HTML, CSS, JS)
 - a blog landing page placeholder
 - a dedicated contact page
+- an Azure Landing Zones series planning page for staging review
 - Docker image build
 - GitHub Actions workflow to publish the image to GHCR
 
