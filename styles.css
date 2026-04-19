@@ -377,12 +377,20 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.feature-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .pillar-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .service-grid-single {
   grid-template-columns: 1fr;
+}
+
+.service-grid-stacked {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .service-card,
@@ -491,7 +499,9 @@ h3 {
   .blog-grid,
   .split-panel,
   .pillar-grid,
-  .feature-grid-home {
+  .feature-grid-home,
+  .feature-grid-4,
+  .service-grid-stacked {
     grid-template-columns: 1fr;
   }
 
