@@ -11,6 +11,7 @@ WORKDIR /app
 
 COPY index.html /app/index.html
 COPY services.html /app/services.html
+COPY training.html /app/training.html
 COPY about.html /app/about.html
 COPY blog.html /app/blog.html
 COPY ai-deployment-options.html /app/ai-deployment-options.html
