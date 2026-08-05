@@ -1,107 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Jurys Cloud Consulting</title>
-    <meta
-      name="description"
-      content="Contact Jurys Cloud Consulting to discuss AI workflow deployment, AI training, Azure support, and disaster recovery planning for SMBs."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="topbar reveal">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">JCC</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Jurys Cloud Consulting</title>
+  <meta name="description" content="Book a discovery call or pick a pilot. Based in Vilnius, serving the Baltics and Nordics.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">JC</span>
+      <span>Jurys Cloud <span class="brand-sub">· Consulting</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pilots.html">Pilots</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Let's make AI work — on your terms.</h1>
+    <p class="lead">
+      Book a discovery call, pick a pilot, or just ask a question. We answer
+      every serious enquiry within one business day.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- form -->
+      <div>
+        <h2>Send a message</h2>
+        <p class="muted">Fill this in and your email client will open with everything pre-filled — nothing is stored on a server.</p>
+        <form id="contact-form" class="form" novalidate>
+          <div class="form-row">
+            <div>
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Doe">
+            </div>
+            <div>
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="jane@company.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Acme OÜ">
+            </div>
+            <div>
+              <label for="interest">Interested in</label>
+              <select id="interest" name="interest">
+                <option value="">— select —</option>
+                <option>A pilot (2–4 weeks)</option>
+                <option>Private RAG knowledge base</option>
+                <option>Document AI / IDP</option>
+                <option>Local-AI platform deployment</option>
+                <option>Managed local-AI / retainer</option>
+                <option>AI governance / EU AI Act</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
           <div>
-            <strong class="brand-name">Jurys Cloud Consulting</strong>
-            <div class="brand-subtitle">AI deployment, Azure support, and resilience planning</div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="A sentence or two about your situation — what data can't leave the building, what you'd like to automate."></textarea>
           </div>
-        </a>
-        <nav class="nav">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="services.html">Services</a>
-          <a class="nav-link" href="training.html">Training</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link nav-link-active nav-cta" href="contact.html">Contact</a>
-        </nav>
-      </header>
-
-      <main>
-        <section class="page-hero reveal">
-          <p class="eyebrow">Contact</p>
-          <h1>Let’s talk about the AI workflow you want to deploy.</h1>
-          <p class="lead page-lead">
-            If you are planning a local, cloud, or hybrid AI rollout, or you need training, Azure support,
-            or resilience planning around it, this is the right place to start the conversation.
-          </p>
-        </section>
-
-        <section class="content-panel reveal split-panel split-panel-strong">
           <div>
-            <p class="eyebrow">Start here</p>
-            <h2>Email is still the simplest way to begin.</h2>
-            <p class="lead">
-              A good first message is enough. Describe the use case, current environment, privacy or scale concerns,
-              and whether you need deployment, training, supporting Azure work, or all three.
-            </p>
+            <button type="submit" class="btn btn-primary">Open my email client</button>
           </div>
-          <div class="contact-card">
-            <span class="status-pill">Primary contact</span>
-            <h3>laurynas@jurys.lt</h3>
-            <p>
-              Use this for local or cloud AI workflows, hybrid AI architecture, AI training for SMB teams,
-              Azure platform support, and disaster recovery planning where needed.
-            </p>
-            <a class="button button-primary" href="mailto:laurynas@jurys.lt">Send an email</a>
-          </div>
-        </section>
+          <p id="form-status" class="form-note" role="status" style="display:none;"></p>
+          <p class="form-note">Prefer email directly? <a href="mailto:laurynas@jurys.lt">laurynas@jurys.lt</a></p>
+        </form>
+      </div>
 
-        <section class="content-panel reveal">
-          <div class="feature-grid contact-grid">
-            <article class="feature-card">
-              <h3>Good fit</h3>
-              <p>
-                SMBs that want practical AI adoption, clearer deployment choices, and supporting architecture that matches the business.
-              </p>
-            </article>
-            <article class="feature-card">
-              <h3>Common topics</h3>
-              <p>
-                Private AI setups, cloud AI workflows, hybrid architecture, AI training, Azure foundations, and resilience planning.
-              </p>
-            </article>
-            <article class="feature-card">
-              <h3>Helpful first note</h3>
-              <p>
-                Briefly describe the business context, current workflow, main concern, and what outcome you want to reach.
-              </p>
-            </article>
-          </div>
-        </section>
-      </main>
+      <!-- direct contact -->
+      <div>
+        <div class="contact-card">
+          <h3>Direct contact</h3>
+          <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:laurynas@jurys.lt">laurynas@jurys.lt</a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/laurynas-jurys-01441728/" target="_blank" rel="noopener">/in/laurynas-jurys</a></dd>
+            <dt>Location</dt>
+            <dd>Vilnius, Lithuania<br><span class="muted small">Serving the Baltics &amp; Nordics (remote-friendly)</span></dd>
+            <dt>Response time</dt>
+            <dd class="small muted">Within 1 business day. Discovery calls typically scheduled within the same week.</dd>
+          </dl>
+        </div>
 
-      <footer class="footer reveal">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Clear use cases make the first discussion much more useful.</h2>
-          <p>Start with the workflow, constraints, and what success should look like.</p>
+        <div class="contact-card" style="margin-top:20px;">
+          <h3>Before you write</h3>
+          <p class="small muted" style="margin-bottom:8px;">If you can, mention:</p>
+          <ul class="small" style="margin-bottom:0;">
+            <li>which sector you're in,</li>
+            <li>what data can't leave your building, and</li>
+            <li>one repetitive task you'd like to automate.</li>
+          </ul>
+          <p class="small muted" style="margin:12px 0 0;">That's enough to recommend the right pilot.</p>
         </div>
-        <div class="footer-actions">
-          <a class="button button-primary" href="mailto:laurynas@jurys.lt">Send an email</a>
-          <p>Jurys Cloud Consulting · Contact</p>
-        </div>
-      </footer>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
-  </body>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Jurys Cloud Consulting</div>
+        <p class="small">Private AI, operated properly. AI automation and self-hosted intelligence, to SRE standards.</p>
+        <p class="small">Vilnius, Lithuania · Serving the Baltics &amp; Nordics</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pilots.html">Pilots</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:laurynas@jurys.lt">laurynas@jurys.lt</a></li>
+          <li><a href="https://www.linkedin.com/in/laurynas-jurys-01441728/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <span>© <span id="year">2026</span> Jurys Cloud Consulting. Indicative pricing — final quotes are confirmed in the SOW.</span>
+      <span>Aug 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
 </html>

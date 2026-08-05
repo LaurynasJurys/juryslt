@@ -1,5 +1,9 @@
 Dockerfile
+.dockerignore
 .git
 .gitignore
+.github
 k8s
+drafts
 README.md
+serve.ps1

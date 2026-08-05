@@ -1,120 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Jurys Cloud Consulting</title>
-    <meta
-      name="description"
-      content="Jurys Cloud Consulting helps SMBs deploy practical AI systems, with Azure and resilience support where needed."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="topbar reveal">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">JCC</span>
-          <div>
-            <strong class="brand-name">Jurys Cloud Consulting</strong>
-            <div class="brand-subtitle">AI deployment, Azure support, and resilience planning</div>
-          </div>
-        </a>
-        <nav class="nav">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="services.html">Services</a>
-          <a class="nav-link" href="training.html">Training</a>
-          <a class="nav-link nav-link-active" href="about.html">About</a>
-          <a class="nav-link nav-cta" href="contact.html">Contact</a>
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Jurys Cloud Consulting</title>
+  <meta name="description" content="A solo-founded, operator-grade AI practice. Azure AI Engineer + Solutions Architect Expert + SRE. We sit at the apex that combines sovereignty and delivery discipline.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-      <main>
-        <section class="page-hero reveal">
-          <p class="eyebrow">About</p>
-          <h1>Practical AI delivery first. Stronger cloud foundations where they help.</h1>
-          <p class="lead page-lead">
-            Jurys Cloud Consulting exists to help SMBs move from vague AI ambition to usable systems,
-            with Azure architecture and resilience work added where they make the deployment safer, more scalable, or easier to support.
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">JC</span>
+      <span>Jurys Cloud <span class="brand-sub">· Consulting</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pilots.html">Pilots</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Talk to us</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">About</span>
+    <h1>A solo-founded, operator-grade AI practice.</h1>
+    <p class="lead">
+      We build and operate private AI — automation that works, and inference
+      that runs on the client's own hardware, to SRE standards.
+    </p>
+  </div>
+</section>
+
+<!-- founder -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">The founder</span>
+        <h2>Laurynas Jurys</h2>
+        <p class="lead">
+          One of very few people in the Baltic region who combines
+          <strong>Azure AI Engineer + Solutions Architect Expert</strong>
+          certifications with hands-on <strong>SRE/DevOps leadership</strong>
+          and a documented <strong>self-hosted LLM stack</strong>.
+        </p>
+        <ul>
+          <li><strong>Azure Solutions Architect Expert</strong> · <strong>Azure AI Engineer Associate</strong> · SRE Foundation.</li>
+          <li>Led SRE team through client onboardings; migrated <strong>~1000 VMs and ~2000 DB backups</strong> safely; built Power BI capacity dashboards.</li>
+          <li>Author of the <strong>UbuntuLLM</strong> repo — a multi-vendor self-hosted LLM stack (vLLM/Ollama/llama.cpp across NVIDIA, AMD, Intel, and Apple Silicon/Mac, Traefik, Open WebUI, agents).</li>
+          <li>Lineage: Barclays, Danske, Telia, Devoteam, Atos — the credibility multiplier in regulated verticals.</li>
+        </ul>
+        <div class="btn-row" style="margin-top:16px;">
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/laurynas-jurys-01441728/" target="_blank" rel="noopener">LinkedIn profile</a>
+          <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Why this combination matters</h3>
+          <p>
+            Most AI vendors can call an API. Very few can stand up a hardened,
+            monitored, multi-GPU inference platform on a client's premises and
+            integrate it into existing ITSM, backup, and identity systems.
           </p>
-        </section>
-
-        <section class="content-panel reveal split-panel split-panel-strong">
-          <div>
-            <h2>Why this approach exists</h2>
-          </div>
-          <div>
-            <p class="lead">
-              Many businesses want to adopt AI quickly, but do not need a generic cloud consultancy story. They need help choosing the right deployment model,
-              fitting it to their privacy and budget constraints, and making sure the result is something the team can actually use.
-            </p>
-            <p class="lead secondary-lead">
-              Sometimes that means local AI. Sometimes it means Azure-based services. Sometimes it means hybrid architecture.
-              The important part is to choose the right model for the business, then add the foundation and resilience work that makes it hold up.
-            </p>
-          </div>
-        </section>
-
-        <section class="content-panel reveal">
-          <div class="approach-list">
-            <div>
-              <span>01</span>
-              <h3>Start from the use case</h3>
-              <p>
-                The right AI architecture starts with the business workflow, not with whatever platform is fashionable that week.
-              </p>
-            </div>
-            <div>
-              <span>02</span>
-              <h3>Stay proportional</h3>
-              <p>
-                SMBs need workable systems, clear tradeoffs, and adoption support, not enterprise theatre and unnecessary complexity.
-              </p>
-            </div>
-            <div>
-              <span>03</span>
-              <h3>Add cloud and resilience where they strengthen the result</h3>
-              <p>
-                Azure foundations and disaster recovery planning matter when they help AI deployments become more secure, scalable, and supportable.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-panel reveal split-panel">
-          <div>
-            <p class="eyebrow">Positioning</p>
-            <h2>AI deployment and training at the center. Azure and DR in support.</h2>
-          </div>
-          <div>
-            <p class="lead">
-              The offer is intentionally centered on AI delivery for SMBs. Cloud platform work and resilience planning are supporting services,
-              used where they help the AI system succeed in production instead of becoming fragile or hard to trust.
-            </p>
-            <a class="button button-primary" href="contact.html">Book a consultation</a>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer reveal">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>If the goal is useful AI, start with the workflow and constraints.</h2>
-          <p>Then choose the architecture that fits, not the one that sounds fashionable.</p>
+          <p class="small muted" style="margin-bottom:0;">
+            That gap &mdash; between "we did a ChatGPT pilot" and "we run
+            production AI, safely, on our own hardware" &mdash; is the practice.
+          </p>
         </div>
-        <div class="footer-actions">
-          <a class="button button-primary" href="contact.html">Discuss your project</a>
-          <p>Jurys Cloud Consulting · About</p>
-        </div>
-      </footer>
+      </div>
     </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
-  </body>
+<!-- positioning triangle -->
+<section class="section section--alt">
+  <div class="container">
+    <span class="eyebrow">Positioning</span>
+    <h2>We sit at the apex.</h2>
+    <div class="split" style="margin-top:32px;">
+      <div>
+        <p class="lead">
+          Three words do the heavy lifting:
+        </p>
+        <ul>
+          <li><strong>Private</strong> &mdash; data sovereignty, GDPR, EU AI Act. The wedge no SaaS can match.</li>
+          <li><strong>Operate</strong> &mdash; we don't just build it and leave; we keep it running.</li>
+          <li><strong>SRE standards</strong> &mdash; the credibility gap most AI vendors cannot cross.</li>
+        </ul>
+        <p>
+          We combine <strong>sovereignty + delivery discipline</strong>. Most
+          competitors sit on one of the two base corners and cannot do both.
+        </p>
+      </div>
+      <div>
+        <div class="pos-diagram" aria-label="Positioning triangle">
+          <div class="pos-apex">
+            <span class="pos-apex-tag">Private + Operated</span>
+            <span class="pos-apex-name">Us</span>
+            <span class="pos-apex-sub">data-stays <span class="pos-x">+</span> operated, monitored, DR</span>
+          </div>
+          <div class="pos-legs">
+            <div class="pos-leg pos-leg--left"><span></span></div>
+            <div class="pos-leg pos-leg--right"><span></span></div>
+          </div>
+          <div class="pos-base">
+            <div class="pos-corner">
+              <strong>Cloud API only</strong>
+              <span class="muted">OpenAI / Azure — data leaves</span>
+            </div>
+            <div class="pos-corner">
+              <strong>Generic "AI consultants"</strong>
+              <span class="muted">slides, no SRE</span>
+            </div>
+          </div>
+          <p class="pos-caption muted small">Most competitors sit on one base corner. We combine both.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- who we work with -->
+<section class="section section--alt">
+  <div class="container">
+    <span class="eyebrow">Who we work with</span>
+    <h2>Industries where private AI fits.</h2>
+    <p class="lead">If your data can't leave the building &mdash; because of GDPR, a regulator, or plain confidentiality &mdash; we're built for you.</p>
+    <div class="grid grid-3" style="margin-top:32px;">
+      <div class="card">
+        <div class="card-icon">⚖️</div>
+        <h3>Legal, notary, accounting</h3>
+        <p class="small">Private RAG over case files and precedents, contract review, document AI for intake &mdash; nothing leaves the firm.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏦</div>
+        <h3>Banking, fintech, insurance</h3>
+        <p class="small">Sovereign inference, claims and underwriting assist, AI governance and EU AI Act readiness for the regulator.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏭</div>
+        <h3>Manufacturing &amp; logistics</h3>
+        <p class="small">Invoice / BoL / customs document AI, supplier email automation, machine-log triage, edge QA.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏛️</div>
+        <h3>Public sector &amp; education</h3>
+        <p class="small">Data-sovereignty mandate, citizen casework, multilingual service assistants, records de-identification.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🩺</div>
+        <h3>Healthcare &amp; pharma</h3>
+        <p class="small">Clinical summarization, coding assist, pharmacovigilance &mdash; with the compliance bar handled.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💻</div>
+        <h3>SaaS / ISV</h3>
+        <p class="small">Embed private AI features inside your product, on your infrastructure &mdash; with cost-optimized inference routing.</p>
+      </div>
+    </div>
+    <p class="small muted center" style="margin-top:28px;">Based in Vilnius. Lithuania &amp; the Baltics first, remote delivery across the Nordics.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Let's find the pilot that fits.</h2>
+      <p>If your data can't leave the building, let's talk about which pilot matches your sharpest pain.</p>
+      <a class="btn btn-primary" href="contact.html">Talk to us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Jurys Cloud Consulting</div>
+        <p class="small">Private AI, operated properly. AI automation and self-hosted intelligence, to SRE standards.</p>
+        <p class="small">Vilnius, Lithuania · Serving the Baltics &amp; Nordics</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pilots.html">Pilots</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:laurynas@jurys.lt">laurynas@jurys.lt</a></li>
+          <li><a href="https://www.linkedin.com/in/laurynas-jurys-01441728/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <span>© <span id="year">2026</span> Jurys Cloud Consulting. Indicative pricing — final quotes are confirmed in the SOW.</span>
+      <span>Aug 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
 </html>

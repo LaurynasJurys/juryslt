@@ -1,5 +1,0 @@
-staging.jurys.lt basic auth
-username: jccadmin
-password: tyQHlJthytcxx9ZkvwuSqNjH
-created: 2026-03-28 UTC
-purpose: protect draft content on staging until production release
